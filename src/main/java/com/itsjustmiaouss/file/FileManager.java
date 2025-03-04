@@ -56,7 +56,7 @@ public class FileManager {
         deleteDuplicatedMods();
 
         FileUtils.copyDirectory(cacheManager.getCachePath().toFile(), cacheManager.getGamePath().toFile());
-        System.out.println("Copied cache folder to .minecraft!");
+        System.out.println("Copied cache folder to game directory!");
     }
 
 }

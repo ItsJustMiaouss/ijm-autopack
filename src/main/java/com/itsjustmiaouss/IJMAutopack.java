@@ -35,7 +35,7 @@ public class IJMAutopack {
 
     private static Options createOptions() {
         Options options = new Options();
-        options.addRequiredOption("gamedir", "gamedir", true, "The path of the game dir (.minecraft root of the instance). Use $INST_DIR.");
+        options.addRequiredOption("gamedir", "gamedir", true, "The path of the game directory. Use $INST_MC_DIR.");
         options.addRequiredOption("host", "host", true, "Define the host URL containing the manifest.");
         return options;
     }

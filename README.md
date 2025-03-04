@@ -14,14 +14,14 @@ The installation guide will assume you are using PrismLauncher. But you can use 
 - Download the [latest release](https://github.com/ItsJustMiaouss/ijm-autopack/releases).
 - Open PrismLauncher or any other fork, then:
   - Select your instance and click on `Folder` (on the right menu).
-  - Copy `ijm-autopack-XXX.jar` to the `.minecraft`.
+  - Copy `ijm-autopack-XXX.jar` to the `.minecraft` or `minecraft` (where you have your `saves` and `options.txt`).
   - Copy the name of the downloaded `.jar` file.
 - Go back to PrismLauncher:
   - Select your instance and click on `Edit` (on the right menu).
   - Go to `Settings` and on the `Custom commands` tab.
   - In `Pre-launch command:` enter:
 
-``java -jar <copied-jar-name.jar> -game $INST_NAME -host <host-url>``
+``java -jar <copied-jar-name.jar> -gamedir $INST_MC_DIR -host <host-url>``
 
 Replace `<copied-jar-name.jar>` with the name of the downloaded file and `<host-url>` with the URL provided by the server administrator.
 
@@ -43,9 +43,6 @@ The server must have an endpoint returning a JSON manifest:
       "name": "mods/my-mod.jar",
       "uri": "https://cdn.<your-domain>/mods/my-mod.jar",
       "checksum": "<MD5-checksum>"
-    },
-    {
-      ...
     }
   ]
 }

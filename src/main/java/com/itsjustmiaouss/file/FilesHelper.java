@@ -65,11 +65,6 @@ public final class FilesHelper {
         return isValidFile(file) && file.toFile().getName().endsWith(".jar");
     }
 
-    @Deprecated
-    public static boolean isValidConfig(Path file) {
-        return isValidFile(file) && file.endsWith(".minecraft/config");
-    }
-
     /**
      * @param filePath Mod (jar) file
      * @return The mod ID contained in fabric.mod.json. Work obviously only with Fabric mods.
