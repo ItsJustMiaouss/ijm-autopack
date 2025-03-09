@@ -19,6 +19,7 @@ The installation guide will assume you are using PrismLauncher. But you can use 
 - Go back to PrismLauncher:
   - Select your instance and click on `Edit` (on the right menu).
   - Go to `Settings` and on the `Custom commands` tab.
+  - Check the checkbox `Custom Commands`.
   - In `Pre-launch command:` enter:
 
 ``java -jar <copied-jar-name.jar> -gamedir $INST_MC_DIR -host <host-url>``
