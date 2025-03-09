@@ -25,6 +25,9 @@ The installation guide will assume you are using PrismLauncher. But you can use 
 
 Replace `<copied-jar-name.jar>` with the name of the downloaded file and `<host-url>` with the URL provided by the server administrator.
 
+![image](https://github.com/user-attachments/assets/3b22ac38-7bae-4c6c-a4dd-c0f8809ba9cc)
+
+
 ## Server setup
 
 You'll need to use your own storage server like Cloudflare R3 or AWS S3 to store the files, and a simple Node.js application (e.g. Cloudflare Workers).
