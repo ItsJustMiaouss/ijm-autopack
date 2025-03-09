@@ -31,7 +31,7 @@ Replace `<copied-jar-name.jar>` with the name of the downloaded file and `<host-
 
 ## Server setup
 
-You'll need to use your own storage server like Cloudflare R3 or AWS S3 to store the files, and a simple Node.js application (e.g. Cloudflare Workers).
+You'll need to use your own storage server like Cloudflare R2 or AWS S3 to store the files, and a simple Node.js application (e.g. Cloudflare Workers).
 
 The server must have an endpoint returning a JSON manifest:
 
